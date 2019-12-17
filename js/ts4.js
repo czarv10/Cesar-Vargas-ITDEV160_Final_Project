@@ -2,21 +2,21 @@ $(function() {
     var data = [
         {
             id: 1,
-            title: 'Time Magazine',
+            title: 'San Diego Reader',
             body: 
-            'is a little too long; some scenes leave unnecessary skidmark trails. But the movie still has amiable style and energy to spare. Its fast but never furious',
-            author: 'Stephanie Zacharek'
+            'Why the need for Part 4? there are new characters to merchandise',
+            author: 'Scott Marks'
         },
         {
             id: 2,
-            title: 'Times (UK)',
-            body: 'Its far from perfect film, but a richly entertaining one. with a twist that only devoted petroheads will know is coming.',
-            author: 'Ed Potton'
+            title: 'CinemaBlend',
+            body: 'Not only is Toy Story 4 is the sequel I never knew I needed, its quite possible the best Toy Story to ever be told.',
+            author: 'Mike Reyes'
         },
         {
             id: 3,
-            title: 'ReelViews',
-            body: 'Mangold takes Ford v. Ferrari out of the simple realm of the genre without entirely losing the vibe.',
+            title: 'Brightest Yung Things',
+            body: 'Toy Story 4 is the most fun film of 2019 so far, and the fact that it is aslo able to imbue this story with a chatarsis, stakes and emotional moments is just icing on the cake.',
             author: 'James Berardinelli'
         }
     ];
@@ -98,6 +98,7 @@ function closeModal(){
     // Hide modal
     modal.classList.remove('visible');
     backdrop.classList.remove('visible');
+    var content = get('display-content');
 }
 
 function saveContent(){
@@ -129,4 +130,3 @@ window.addEventListener('load', function(){
     cancelButton.addEventListener('click', closeModal);
     saveButton.addEventListener('click', saveContent);
 });
-

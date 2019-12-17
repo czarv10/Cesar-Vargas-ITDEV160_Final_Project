@@ -2,22 +2,22 @@ $(function() {
     var data = [
         {
             id: 1,
-            title: 'Time Magazine',
+            title: 'San Diego Reader',
             body: 
-            'is a little too long; some scenes leave unnecessary skidmark trails. But the movie still has amiable style and energy to spare. Its fast but never furious',
-            author: 'Stephanie Zacharek'
+            'This is the a feat of engineering. I felt a sense of catharsis finishing it.',
+            author: 'Amy Nicholson'
         },
         {
             id: 2,
-            title: 'Times (UK)',
-            body: 'Its far from perfect film, but a richly entertaining one. with a twist that only devoted petroheads will know is coming.',
-            author: 'Ed Potton'
+            title: 'Esquire Magazine',
+            body: 'Endgame does what all the great Marvel movies do its a fun and funny action movie made by people who are experts at doing just that.',
+            author: 'Matt Miller'
         },
         {
             id: 3,
-            title: 'ReelViews',
-            body: 'Mangold takes Ford v. Ferrari out of the simple realm of the genre without entirely losing the vibe.',
-            author: 'James Berardinelli'
+            title: 'ComicBookMo',
+            body: 'is a masterpiece which not only delivers on every expecation you had but exceeds ones you didnt eve think about. This is just not a movie, it is an experience.',
+            author: 'Josh Wilding'
         }
     ];
 
@@ -70,6 +70,11 @@ $(function() {
     initPosts();
 
 });
+
+// Utitily Functions
+function get(element) {
+    return document.getElementById(element);
+}
 
 // Utitily Functions
 function get(element) {
@@ -129,4 +134,3 @@ window.addEventListener('load', function(){
     cancelButton.addEventListener('click', closeModal);
     saveButton.addEventListener('click', saveContent);
 });
-

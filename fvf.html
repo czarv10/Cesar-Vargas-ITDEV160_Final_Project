@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vargas_Final_Project</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+ <header>        
+    <h1><a href="index.html">The Best Three Movies of 2019</a></h1>
+ </header>
+ <main>
+    <img id="ff" src="images/fvf.jpg" alt="Ford Vs Ferrari">
+    <p><strong>Release Date: </strong>August 30, 2019</p>
+    <p><strong>Money Made: </strong>US $86.8 million and worldwide total of 185 million.</p>
+    <p><strong>Description: </strong>American automotive designer Carrol Shellby
+        and fearless British race car Ken Miles battle corporate interference,
+        the laws of physics and their own personal demons to build a revolutionary
+        vehicle for the Ford Motor Co.  Together, they plan to compete against the race cars
+        of Enzo Ferrari at the 24 Hours of Le Mans in France in 1966.
+    </p>
+    
+    <section id="sidebar">
+            <ul id="nav-container"></ul>
+    </section>
+    <section id="post-container">
+        <section id="intro"></section>
+        <h2></h2>
+        <blockquote></blockquote>
+        <span id="author"></span>
+    </section>
+    <section>
+        <header>
+            <div class="header-menu"></div>
+            <div>
+                <button id="new-button">Add Review</button>
+            </div>
+        </header>
+    </section>
+ </main>
+ <section id="display-content"></section>
+ <footer></footer>
+
+ <!--Modal Dialog (hidden by default)-->
+ <div class="modal" id="modal-dialog">
+    <div class="modal-content">
+    <section>
+        <h2>Title</h2>
+        <input type="text" id="edit-title-text" id="">
+        <span id="edit-title-message"></span>
+    </section>
+    <section>
+        <h2>Content</h2>
+        <textarea name="content" id="edit-content-text" cols="80" rows="8"></textarea>
+        <span id="edit-content-message"></span>
+    </section>
+    <footer>
+        <button id="cancel-button">Cancel</button>
+        <button id="save-button">Save</button>
+    </footer>
+    </div>
+ </div>    
+<div id="modal-backdrop"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="js/scripts.js"></script>  
+</body>
+</html>

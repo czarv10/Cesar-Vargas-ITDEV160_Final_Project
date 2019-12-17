@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(214, 214, 213);
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: lightgreen;
+  }
+  
+a:active {
+    background-color: hotpink;
+  } 
+
+#n1 {
+    padding-left: 1.5em;
+}
+main {
+    background-color:  rgb(214, 214, 213);
+}
+header {
+    text-align: center;
+}
+#ff, #aeg, #ts4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#ff1, #aeg1, #ts41 {
+    width: 350px;
+    padding-top: 1em;
+    height: 280px;
+    float: none;
+    margin: 1em 2.5em;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+  }
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+p {
+    clear: both;
+    padding-top: 1.5em;
+    padding-left: 2em;
+}
+#sidebar {
+    width: 225px;
+    flex: 0 0 12em;
+    background-color: rgb(158, 160, 156);
+}
+
+#sidebar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    color:rgb(90, 88, 88);
+    padding: 0 0 10px 20px;
+    list-style-type: none;
+    color: black;
+}
+
+#sidebar ul li:hover {
+    cursor: pointer;
+    background-color: rgb(147, 217, 245);
+}
+
+#post-container {
+    flex: 1;
+    background-color:  rgb(158, 160, 156);
+    padding: 45px;
+}
+
+#intro {
+    display: none;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1em 1em 1em 0;
+}
+
+blockquote:before,
+blockquote:after {
+    content: '''';
+}
+.author {
+    width: 100%;
+    display: inline-block;
+    text-indent: 5%;
+}
+
+.author:before {
+    content: '-';
+}
+
+/* main style*/
+
+main section header{
+   display: flex;
+   padding: 5px;
+   color: #efefef;
+   background-color: #2d2d2d;
+   border-bottom: solid 1px; 
+}
+
+main section header .header-title {
+    display: inline-block;
+}
+
+main section header .header-menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #777;
+    font-size: smaller;
+}
+
+main #display-content {
+    padding: 20px;
+}
+
+/* modal style*/
+
+#modal-backdrop {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    background-color: rgb(214, 214, 213);
+}
+
+#modal-backdrop.visible {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border: solid 1px #555;
+    background-color: rgb(214, 214, 213);
+    z-index: 99999;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal.visible {
+    display: block;
+}
+
+.modal-content {
+    width: 300px;
+    height: 300px;
+}
+
+#edit-title {
+    width: 300px;
+}
+
+#edit-content-text {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#edit-author {
+    width: 300px;
+}
